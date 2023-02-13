@@ -92,5 +92,5 @@ async function scrapeWorldPopulation() {
     console.log(error);
   }
 }
-// Schedule a job to run every two minutes
-const job = nodeCron.schedule("*/2 * * * *", scrapeWorldPopulation);
+// Schedule a job to run every minute 
+const job = nodeCron.schedule("*/1 * * * *", scrapeWorldPopulation);
